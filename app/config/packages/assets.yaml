@@ -1,0 +1,7 @@
+framework:
+    assets:
+        packages:
+            react:
+                json_manifest_path: "%kernel.project_dir%/public/react_build/manifest.json"
+            mockUp:
+                json_manifest_path: "%kernel.project_dir%/public/mock_up_build/manifest.json"

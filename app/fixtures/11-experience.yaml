@@ -1,0 +1,7 @@
+
+App\Domain\Experience\Model\Experience:
+    experience_{0..10}:
+        name: '<sentence()>'
+        level: '<word()>'
+        type: '@experience_type_*'
+        keyPoints: '@experience_keyPoint_{0..10}'

@@ -1,0 +1,4 @@
+
+App\Domain\Experience\Model\Type:
+    experience_type_{0..10}:
+        name: '<randomElement(["Travail", "Projet", "Formation", "Auto-formation"])>'

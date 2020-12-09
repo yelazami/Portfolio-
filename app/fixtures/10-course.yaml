@@ -1,0 +1,12 @@
+
+App\Domain\Course\Model\Course:
+    course_template (template):
+        name: '<word()>'
+        description: '<realText()>'
+
+    course_{0..10} (extends course_template):
+        type: '<word()>'
+
+App\Domain\Course\Model\StudyCourse:
+    study_course_{0..10} (extends course_template):
+        curriculum: '<sentence()>'

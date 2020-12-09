@@ -1,0 +1,6 @@
+parameters:
+    app.default_locale: 'en'
+    app.supported_locales: ['en', 'fr']
+
+imports:
+    - { resource: 'services/{controller,event,security,admin}.yaml' }

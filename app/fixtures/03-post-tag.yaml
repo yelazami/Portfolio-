@@ -1,0 +1,5 @@
+
+App\Domain\Post\Model\Tag:
+    post_tag_{0..10}:
+        name: '<word()>'
+        icon: '<imageUrl(128, 128, "cats")>'

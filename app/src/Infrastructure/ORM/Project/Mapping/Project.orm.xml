@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doctrine-mapping
+    xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
+    https://www.doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+
+    <entity name="App\Domain\Project\Model\Project">
+        <id name="id" type="uuid"/>
+        <field name="name" />
+        <field name="description" type="text"/>
+
+        <many-to-many field="experiences" target-entity="App\Domain\Experience\Model\Experience" />
+        <many-to-many field="courses" target-entity="App\Domain\Course\Model\AbstractCourse">
+            <join-table name="projects_courses">
+                <join-columns>
+                    <join-column name="project_id" />
+                </join-columns>
+                <inverse-join-columns>
+                    <join-column name="course_id" />
+                </inverse-join-columns>
+            </join-table>
+        </many-to-many>
+    </entity>
+
+</doctrine-mapping>

@@ -1,0 +1,7 @@
+bootstrap:
+    path: /
+    controller: App\Application\Action\FrontAction
+login:
+    path:       /login
+    controller: App\Application\Security\Action\LoginAction
+    methods: GET|POST

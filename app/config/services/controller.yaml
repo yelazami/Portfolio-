@@ -1,0 +1,16 @@
+
+services:
+    _defaults:
+        public: true
+        autowire: true
+        autoconfigure: true
+
+    App\Application\Action\FrontAction: ~
+
+    App\Application\Action\MockUpAction:
+        arguments:
+            $templating: '@twig'
+            $environment: '%kernel.environment%'
+
+    App\Application\Security\Action\LoginAction:
+        tags: ['controller.service_arguments']

@@ -1,0 +1,9 @@
+
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+
+    App\Application\Event\Subscriber\LocaleSubscriber:
+        arguments:
+            $defaultLocale: '%app.default_locale%'

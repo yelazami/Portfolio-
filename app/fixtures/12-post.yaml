@@ -1,0 +1,7 @@
+
+App\Domain\Post\Model\Post:
+    post_{0..10}:
+        title: '<word()>'
+        sub_title: '<sentence()>'
+        content: '<realText()>'
+        vignette: '<imageUrl(1900, 500, "cats")>'

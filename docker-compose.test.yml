@@ -1,0 +1,35 @@
+version: '3.3'
+
+services:
+  back-test:
+    build: docker/back
+    env_file:
+      - .env.test
+    volumes:
+      - ./docker/back/host.test.conf:/etc/nginx/sites-enabled/default
+      - ./app:/var/www/portfolio/:delegated
+    working_dir: /var/www/portfolio/
+    depends_on:
+      - php-fpm-test
+
+  php-fpm-test:
+    build: docker/php-fpm
+    env_file:
+      - .env.test
+    volumes:
+      - ./app:/var/www/portfolio/:delegated
+      - ./docker/php-fpm/fpm-pool.conf:/etc/php/7.1/fpm/pool.d/www.conf:ro
+      - ./app/features/screenshots:/tmp/screenshots
+    working_dir: /var/www/portfolio/
+    entrypoint: /docker-entrypoint.sh
+
+  db:
+    build: docker/postgre
+    environment:
+      - DB_USER=${PG_USER}
+      - DB_NAME=${PG_DATABASE}
+      - DB_PASS=${PG_PASSWORD}
+      - PG_PASSWORD=root
+
+  selenium:
+    image: selenium/standalone-chrome

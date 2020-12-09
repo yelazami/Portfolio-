@@ -1,0 +1,5 @@
+
+App\Domain\Resource\Model\Type:
+    resource_type_{0..10}:
+        name: '<randomElement(["Lib", "Framework", "Liste", "Article"])>'
+        description: '<realText()>'

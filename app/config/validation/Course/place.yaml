@@ -1,0 +1,11 @@
+App\Domain\Course\Model\Place:
+    properties:
+        name:
+            - NotBlank:
+                message: 'course_place.name.not_blank'
+        coordinates:
+            - NotBlank:
+                message: 'course_place.coordinates.not_blank'
+        link:
+            - Url:
+                message: 'course_place.link.url'

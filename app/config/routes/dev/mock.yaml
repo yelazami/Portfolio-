@@ -1,0 +1,5 @@
+mock_up:
+    path: '/mock_up'
+    methods: ['GET']
+    defaults:
+        _controller: 'App\Application\Action\MockUpAction'

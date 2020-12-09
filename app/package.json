@@ -1,0 +1,25 @@
+{
+    "dependencies": {
+        "prop-types": "^15.7.2",
+        "react": "^16.8.6",
+        "react-dom": "^16.8.6",
+        "react-router-dom": "^5.0.0"
+    },
+    "devDependencies": {
+        "@babel/preset-react": "^7.0.0",
+        "@symfony/webpack-encore": "^0.26.0",
+        "core-js": "^3.0.0",
+        "image-webpack-loader": "^6.0.0",
+        "node-sass": "^4.11.0",
+        "sass-loader": "^7.0.1",
+        "webpack-notifier": "^1.6.0"
+    },
+    "license": "UNLICENSED",
+    "private": true,
+    "scripts": {
+        "dev-server": "npx encore dev-server",
+        "dev": "npx encore dev",
+        "watch": "npx encore dev --watch",
+        "build": "npx encore production --progress"
+    }
+}

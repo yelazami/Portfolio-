@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doctrine-mapping
+    xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
+    https://www.doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+
+    <entity name="App\Domain\Experience\Model\Experience">
+        <id name="id" type="uuid"/>
+        <field name="name" />
+        <field name="level" />
+
+        <many-to-one field="type" target-entity="Type" inversed-by="experiences">
+            <cascade>
+                <cascade-persist/>
+            </cascade>
+        </many-to-one>
+
+        <many-to-many field="keyPoints" target-entity="App\Domain\Experience\Model\KeyPoint" orphan-removal="true">
+            <join-table name="experiences_key_points">
+                <join-columns>
+                    <join-column name="experience_id" />
+                </join-columns>
+                <inverse-join-columns>
+                    <join-column name="key_point_id" />
+                </inverse-join-columns>
+            </join-table>
+        </many-to-many>
+
+        <many-to-many field="projects" target-entity="App\Domain\Project\Model\Project" orphan-removal="true">
+            <join-table name="experiences_projects">
+                <join-columns>
+                    <join-column name="experience_id" />
+                </join-columns>
+                <inverse-join-columns>
+                    <join-column name="project_id" />
+                </inverse-join-columns>
+            </join-table>
+        </many-to-many>
+    </entity>
+
+</doctrine-mapping>

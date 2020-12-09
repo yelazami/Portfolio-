@@ -1,0 +1,11 @@
+
+services:
+    _defaults:
+        public: false
+        autowire: true
+        autoconfigure: true
+
+    App\Application\Admin\DashboardController: ~
+
+    App\Domain\:
+        resource: '../../src/Domain/**/Admin/*'

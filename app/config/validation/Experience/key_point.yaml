@@ -1,0 +1,5 @@
+App\Domain\Experience\Model\KeyPoint:
+    properties:
+        text:
+            - NotBlank:
+                message: 'experience_key_point.text.not_blank'

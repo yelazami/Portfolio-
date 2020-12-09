@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="{{ app.request.locale }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Yassine EL-AZAMI</title>
+    <link
+        href='https://fonts.googleapis.com/css?family=Poppins:300,300italic,400,400italic,600,700,700italic&subset=latin-ext'
+        rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css" type='text/css'>
+    {{ encore_entry_link_tags('style', 'mockUp', 'mockUpConfig') }}
+    <link href="{{ asset('images/computer.svg', 'mockUp') }}" rel="">
+</head>
+<body>
+<header>
+    <nav id="top-navigation">
+        <ul>
+            <li><a href="#"><i class="uil uil-accessible-icon-alt"></i></a></li>
+            <li><a href="#">Blog</a></li>
+        </ul>
+    </nav>
+</header>
+<section id="landing-heading">
+    <h1 id="name-title">Yassine El-AZAMI</h1>
+    <h2 id="purpose-title">Développement full stack et conception Web</h2>
+</section>
+<main id="landing-content">
+    <h3>Compétences</h3>
+    <div class="__overflow-guard">
+        <section id="landing-skills">
+            <article class="skill-card --active">
+                <header><h4>Back End</h4></header>
+                <p>Développement et conception d'applications métiers et de sites en <i>PHP/Symfony</i></p>
+                <p>Développement de service workers en <i>PHP</i></p>
+                <p>Mise en place et réalisation de tests unitaires et fonctionnels avec <i>PHPUnit</i> et <i>Behat</i></p>
+            </article>
+            <article class="skill-card">
+                <header><h4>Front End</h4></header>
+                <p>Intégration des interfaces en respectant les contraintes de design adaptatif, de sémantique du contenu
+                    et de compatibilité des navigateurs</p>
+                <p>Programmation d'interactions poussés avec <i>Javascript</i> et <i>JQuery</i> pour la manipulation de DOM,
+                    les communications <i>HTTP</i> asynchrones et l'exploitation des différentes <i>API</i> mises à
+                    disposition par le navigateur</p>
+                <p>Développement d'applications navigateur à l'aide des frameworks <i>Angular2</i> et <i>React</i></p>
+            </article>
+            <article class="skill-card">
+                <header><h4>Exploitation</h4></header>
+                <p>Versionning des projets à l'aide de <i>Git</i>, utilisation de la méthode <i>git flow</i> pour diviser
+                    les branches de développement en phase avec les sprints du projet</p>
+                <p>Utilisation des pipelines <i>GitLab</i> afin d'exécuter des tests automatisés pour assurer l'intégration
+                    continue</p>
+                <p>Utilisation de <i>Docker</i> pour la mise en place et l'exploitation des environnements de développement</p>
+            </article>
+        </section>
+    </div>
+    <section id="landing-techs">
+        <header><h3>Maîtrise</h3></header>
+        <ul>
+            <li><a href="#" class="highlight">PHP7</a></li>
+            <li><a href="#" class="highlight">Symfony3-5</a></li>
+            <li><a href="#" class="highlight">Doctrine</a></li>
+            <li><a href="#">RabbitMQ</a></li>
+            <li><a href="#">PHPUnit</a></li>
+            <li><a href="#">PHPSpec</a></li>
+            <li><a href="#" class="highlight">EasyAdmin</a></li>
+            <li><a href="#">SonataAdmin</a></li>
+            <li><a href="#">Mysql</a></li>
+            <li><a href="#">PostgreSQL</a></li>
+            <li><a href="#">ReactJs</a></li>
+            <li><a href="#">Angular2</a></li>
+            <li><a href="#">WordPress</a></li>
+            <li><a href="#">TypeScript</a></li>
+            <li><a href="#" class="highlight">HTML5</a></li>
+            <li><a href="#">CSS3</a></li>
+        </ul>
+    </section>
+    <section id="landing__career">
+        <header>
+            <h3>Parcours</h3>
+        </header>
+        <ul>
+            <li>
+                <h4>Biig</h4>
+                <h5>Développeur Back-end</h5>
+                <p>Développement de sites web, de back-office et d'applications métiers en <i>PHP/Symfony</i></p>
+                <p>Maintenance et évolution d'applications complexes contenant des <i>Workers</i> et <i>Message Brokers</i></p>
+                <p>Evolution de thèmes <i>WordPress</i> avec <i>ACF</i></p>
+                <p>Suivi des projets en méthode agile <i>SCRUM</i> et développement avec la méthodologie <i>Git Flow</i></p>
+                <p>Formation à l'accessibilité web pour la conformité avec le <i>RGAA</i> et implémentations <i>WCAG</i></p>
+            </li>
+            <li>
+                <h4>Apivia Mutuelle</h4>
+                <h5>Développeur web en alternance</h5>
+                <p>Etude et développement d'un applicatif de gestion interne pour la mise en conformité avec le RGPD</p>
+                <p>Suivi du projet en méthode de développement de cycle en V</p>
+            </li>
+            <li>
+                <h4>Université de La Rochelle</h4>
+                <h5>Licence pro Création Multimédia</h5>
+                <p>Mise à niveau en infographie et sur les outils Adobe, méthodologie et pratique Webdesign</p>
+                <p>Apprentissage de la méthode agile SCRUM et mise en exercice sur un projet client: <a href="http://veroniqfiguet.com">veroniqfiguet.com</a></p>
+                <p>Développement web côté serveur en <i>PHP</i> avec <i>Symfony</i> et création de thèmes <i>WordPress</i></p>
+                <p>Intégration de maquettes avec <i>Sass</i> et <i>JQuery</i> en prenant en compte les exigences de sémantique et de compatibilité avec les navigateurs</p>
+            </li>
+            <li>
+                <h4>Lycée Aliénor d'Aquitaine</h4>
+                <h5>BTS Service Informatique aux Organisations; Options développement logiciel</h5>
+                <p>Apprentissage des bases du web et de la programmation orientée objet</p>
+                <p>Développement mobile <i>Java/Android</i></p>
+                <p>Conception de modèles de bases de données et implémentations avec <i>MySQL</i> et <i>PostgreSQL</i></p>
+                <p>Intégration de sites web avec les technologies <i>XML</i>, <i>DTD</i> et <i>XSLT</i></p>
+            </li>
+            <li>
+                <h4>Lycée Louis Armand</h4>
+                <h5>BAC STIDD option SIN</h5>
+                <p>Apprentissage des bases de la programmation avec <i>C/Arduino</i></p>
+                <p>Programmation et exploration de l'API de <i>Python</i></p>
+            </li>
+        </ul>
+    </section>
+</main>
+{{ encore_entry_script_tags('mock_up', 'mockUp', 'mockUpConfig') }}
+</body>
+</html>

@@ -1,0 +1,4 @@
+
+App\Domain\Experience\Model\KeyPoint:
+    experience_keyPoint_{0..10}:
+        text: '<sentence()>'

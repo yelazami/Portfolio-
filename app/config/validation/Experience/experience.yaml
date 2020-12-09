@@ -1,0 +1,11 @@
+App\Domain\Experience\Model\Experience:
+    properties:
+        type:
+            - NotBlank:
+                message: 'experience_experience.type.not_blank'
+        name:
+            - NotBlank:
+                message: 'experience_experience.name.not_blank'
+        level:
+            - NotBlank:
+                message: 'experience_experience.level.not_blank'

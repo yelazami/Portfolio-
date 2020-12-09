@@ -1,0 +1,19 @@
+App\Domain\Course\Model\Course:
+    properties:
+        name:
+            - NotBlank:
+                message: 'course_course.name.not_blank'
+        type:
+            - NotNull:
+                message: 'course_course.absence_type.not_null'
+App\Domain\Course\Model\StudyCourse:
+    properties:
+        name:
+            - NotBlank:
+                message: 'course_course.name.not_blank'
+        beginDate:
+            - NotNull:
+                message: 'course_course.absence_start_date.not_null'
+        curriculum:
+            - NotBlank:
+                message: 'course_course.curriculum.not_blank'

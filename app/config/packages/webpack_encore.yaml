@@ -1,0 +1,7 @@
+webpack_encore:
+    output_path: false
+    builds:
+        reactConfig: '%kernel.project_dir%/public/react_build'
+        mockUpConfig: '%kernel.project_dir%/public/mock_up_build'
+        loginConfig: '%kernel.project_dir%/public/login_build'
+    #cache: '%kernel.debug%'

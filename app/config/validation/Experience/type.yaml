@@ -1,0 +1,5 @@
+App\Domain\Model\Type:
+    properties:
+        name:
+            - NotBlank:
+                message: 'experience_type.name.not_blank'

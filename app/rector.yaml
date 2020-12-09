@@ -1,0 +1,26 @@
+
+parameters:
+    paths:
+        - 'src'
+        - 'tests'
+    exclude_paths:
+        - '*/src/Kernel.php'
+        - '*/src/Migrations/*'
+    sets:
+        - 'doctrine'
+        - 'early-return'
+        - 'easy-admin-bundle20'
+        - 'php74'
+        - 'phpstan'
+        - 'solid'
+        - 'symfony-code-quality'
+        - 'symfony-constructor-injection'
+        - 'symfony-phpunit'
+        - 'symfony50'
+        - 'type-declaration'
+    exclude_rectors:
+        - 'Rector\TypeDeclaration\Rector\Property\PropertyTypeDeclarationRector'
+    symfony_container_xml_path: 'var/cache/dev/App_KernelDevDebugContainer.xml'
+    auto_import_names: true
+    import_short_classes: false
+    import_doc_blocks: false

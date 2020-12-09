@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+    <file source-language="en" target-language="en" datatype="plaintext" original="file.ext">
+        <header>
+            <tool tool-id="symfony" tool-name="Symfony"/>
+        </header>
+        <body>
+            <trans-unit id="admin_course">
+                <source>{1} Course|]1,Inf] Courses</source>
+                <target>{1} Course|]1,Inf] Courses</target>
+            </trans-unit>
+            <trans-unit id="admin_experience">
+                <source>Experience</source>
+                <target>Experience</target>
+            </trans-unit>
+            <trans-unit id="admin_keypoint">
+                <source>KeyPoint</source>
+                <target>Key Point</target>
+            </trans-unit>
+            <trans-unit id="admin_experience_type">
+                <source>ExperienceType</source>
+                <target>Experience Type</target>
+            </trans-unit>
+            <trans-unit id="admin_post">
+                <source>Post</source>
+                <target>Post</target>
+            </trans-unit>
+            <trans-unit id="admin_tag">
+                <source>Tag</source>
+                <target>Tag</target>
+            </trans-unit>
+            <trans-unit id="admin_project">
+                <source>Project</source>
+                <target>Project</target>
+            </trans-unit>
+            <trans-unit id="admin_resource">
+                <source>Resource</source>
+                <target>Resource</target>
+            </trans-unit>
+            <trans-unit id="admin_resource_type">
+                <source>ResourceType</source>
+                <target>Resource Type</target>
+            </trans-unit>
+            <trans-unit id="admin_place">
+                <source>Place</source>
+                <target>Place</target>
+            </trans-unit>
+            <trans-unit id="admin_places">
+                <source>Places</source>
+                <target>Places</target>
+            </trans-unit>
+            <trans-unit id="admin_coordinates">
+                <source>Coordinates</source>
+                <target>Coordinates</target>
+            </trans-unit>
+            <trans-unit id="admin_link">
+                <source>Link</source>
+                <target>Link</target>
+            </trans-unit>
+            <trans-unit id="admin_name">
+                <source>Name</source>
+                <target>Name</target>
+            </trans-unit>
+            <trans-unit id="admin_begin_date">
+                <source>Begin date</source>
+                <target>Begin Date</target>
+            </trans-unit>
+            <trans-unit id="admin_end_date">
+                <source>End date</source>
+                <target>End Date</target>
+            </trans-unit>
+            <trans-unit id="admin_id">
+                <source>ID</source>
+                <target>Identifier</target>
+            </trans-unit>
+            <trans-unit id="admin_type">
+                <source>Type</source>
+                <target>Type</target>
+            </trans-unit>
+            <group id="action">
+                <trans-unit id="action_search">
+                    <source>action.search</source>
+                    <target>Search</target>
+                </trans-unit>
+                <trans-unit id="action_new">
+                    <source>action.new</source>
+                    <target>Add New</target>
+                </trans-unit>
+                <trans-unit id="action_edit">
+                    <source>action.edit</source>
+                    <target>Edit</target>
+                </trans-unit>
+                <trans-unit id="action_delete">
+                    <source>action.delete</source>
+                    <target>Delete</target>
+                </trans-unit>
+                <trans-unit id="action_cancel">
+                    <source>action.cancel</source>
+                    <target>Cancel</target>
+                </trans-unit>
+            </group>
+        </body>
+    </file>
+</xliff>

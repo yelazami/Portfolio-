@@ -1,0 +1,5 @@
+
+App\Domain\Project\Model\Project:
+    project_{0..10}:
+        name: '<sentence()>'
+        description: '<realText()>'

@@ -1,0 +1,7 @@
+
+App\Domain\Resource\Model\Resource:
+    resource_{0..10}:
+        type: '@resource_type_*'
+        name: '<sentence()>'
+        description: '<realText()>'
+        link: '<url()>'

@@ -1,0 +1,6 @@
+
+App\Domain\Course\Model\Course:
+    collectionOperations:
+        get: ~
+    itemOperations:
+        get: ~

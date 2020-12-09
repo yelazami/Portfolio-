@@ -1,0 +1,6 @@
+
+App\Domain\Course\Model\Place:
+    course_place_{0..10}:
+        name: '<region()>'
+        coordinates: '<latitude()>-<longitude()>'
+        link: '<url()>'

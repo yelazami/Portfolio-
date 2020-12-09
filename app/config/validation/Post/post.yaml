@@ -1,0 +1,14 @@
+App\Domain\Post\Model\Post:
+    properties:
+        title:
+            - NotBlank:
+                  message: 'post_post.title.not_blank'
+        subTitle:
+            - NotBlank:
+                  message: 'post_post.sub_title.not_blank'
+        content:
+            - NotBlank:
+                  message: 'post_post.content.not_blank'
+        vignette:
+            - NotBlank:
+                  message: 'post_post.vignette.not_blank'

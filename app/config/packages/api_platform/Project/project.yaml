@@ -1,0 +1,6 @@
+
+App\Domain\Project\Model\Project:
+    collectionOperations:
+        get: ~
+    itemOperations:
+        get: ~

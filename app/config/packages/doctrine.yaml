@@ -1,0 +1,54 @@
+parameters:
+    env(DATABASE_URL): ''
+
+doctrine:
+    dbal:
+        driver: 'pdo_pgsql'
+        server_version: '10.12'
+        charset: utf8
+        default_table_options:
+            charset: utf8mb4
+            collate: utf8mb4_unicode_ci
+
+        url: '%env(resolve:DATABASE_URL)%'
+    orm:
+        auto_generate_proxy_classes: '%kernel.debug%'
+        naming_strategy: doctrine.orm.naming_strategy.underscore_number_aware
+        auto_mapping: true
+        mappings:
+            Course:
+                is_bundle: false
+                type: xml
+                dir: '%kernel.project_dir%/src/Infrastructure/ORM/Course/Mapping'
+                prefix: App\Domain\Course\Model
+                alias: Course
+            Experience:
+                is_bundle: false
+                type: xml
+                dir: '%kernel.project_dir%/src/Infrastructure/ORM/Experience/Mapping'
+                prefix: App\Domain\Experience\Model
+                alias: Experience
+            Post:
+                is_bundle: false
+                type: xml
+                dir: '%kernel.project_dir%/src/Infrastructure/ORM/Post/Mapping'
+                prefix: App\Domain\Post\Model
+                alias: Post
+            Project:
+                is_bundle: false
+                type: xml
+                dir: '%kernel.project_dir%/src/Infrastructure/ORM/Project/Mapping'
+                prefix: App\Domain\Project\Model
+                alias: Project
+            Resource:
+                is_bundle: false
+                type: xml
+                dir: '%kernel.project_dir%/src/Infrastructure/ORM/Resource/Mapping'
+                prefix: App\Domain\Resource\Model
+                alias: Resource
+            AdminUser:
+                is_bundle: false
+                type: xml
+                dir: '%kernel.project_dir%/src/Infrastructure/ORM/Security/Mapping'
+                prefix: App\Application\Security\User\AdminUser
+                alias: AdminUser
